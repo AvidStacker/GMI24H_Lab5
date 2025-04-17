@@ -1,29 +1,22 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
-
-namespace SinglyLinkedList
+﻿namespace SinglyLinkedList
 {
-    internal class Node
+    internal class Node<T> where T : Person
     {
-        private Node nextNode;
-        private object item;
+        private Node<T> nextNode;
+        private T item;
 
-        public Node(Node node, object item)
+        public Node(Node<T> node, T item)
         {
             this.nextNode = node;
             this.item = item;
         }
 
-        public object GetItem() { return item; }
+        public T GetItem() { return item; } 
 
-        public void SetItem(Object item) { this.item = item; }
+        public void SetItem(T item) { this.item = item; }
 
-        public Node GetNextNode() { return this.nextNode; }
+        public Node<T> GetNextNode() { return this.nextNode; }
 
-        public void SetNextNode(Node node) { this.nextNode = node; }
-
+        public void SetNextNode(Node<T> node) { this.nextNode = node; }
     }
 }

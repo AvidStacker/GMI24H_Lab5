@@ -7,8 +7,8 @@
     <Nullable>enable</Nullable>
   </PropertyGroup>
 
-  <ItemGroup>
-    <ProjectReference Include="..\ArrayPerformanceTest\ArrayPerformanceTest.csproj" />
-  </ItemGroup>
-
+	<ItemGroup>
+		<ProjectReference Include="..\SinglyLinkedList\SinglyLinkedList.csproj" />
+	</ItemGroup>
+	
 </Project>

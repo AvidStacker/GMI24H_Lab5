@@ -1,14 +1,8 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
-
-namespace SinglyLinkedList
+﻿namespace SinglyLinkedList
 {
-    internal interface IListInterface
+    internal interface IListInterface<T> where T : Person
     {
-        void Add(object item, int index);
+        void Add(T item, int index);
 
         void Remove(int index);
 

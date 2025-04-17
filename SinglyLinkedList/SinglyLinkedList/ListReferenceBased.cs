@@ -1,44 +1,38 @@
 ﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
 
 namespace SinglyLinkedList
 {
-    internal class ListReferenceBased : IListInterface
+    internal class ListReferenceBased<T> where T : Person
     {
-        Node head;
+        private Node<T> head;
 
         public ListReferenceBased()
         {
-            this.head = new Node(null, null);
+            this.head = new Node<T>(null, null);
         }
 
-        public void Add(object item, int index)
+        public void Add(T item, int index)
         {
-            if(index < 1 || index > Size() + 1)
+            if (index < 1 || index > Size() + 1)
             {
                 throw new ListIndexOutOfBoundsException("Index out of bounds");
             }
 
-            Node node = new Node(null, item);
-
-            Node currentNode = Find(index - 1);
+            Node<T> node = new Node<T>(null, item);
+            Node<T> currentNode = GetNode(index - 1);
 
             node.SetNextNode(currentNode.GetNextNode());
-
             currentNode.SetNextNode(node);
         }
 
-        private Node Find(int index)
+        private Node<T> Find(int index)
         {
             if (index < 0 || index > Size())
             {
                 throw new ListIndexOutOfBoundsException("Index out of bounds");
             }
 
-            Node currentNode = head;
+            Node<T> currentNode = head;
             for (int i = 0; i < index; i++)
             {
                 currentNode = currentNode.GetNextNode();
@@ -47,7 +41,6 @@ namespace SinglyLinkedList
             return currentNode;
         }
 
-
         public void Remove(int index)
         {
             if (index < 1 || index > Size())
@@ -55,18 +48,26 @@ namespace SinglyLinkedList
                 throw new ListIndexOutOfBoundsException("Index out of bounds");
             }
 
-            Node node = Find(index - 1);
-            Node currentNode = node.GetNextNode();
+            Node<T> node = GetNode(index - 1);
+            Node<T> currentNode = node.GetNextNode();
 
             node.SetNextNode(currentNode.GetNextNode());
-
             currentNode.SetNextNode(null);
         }
 
         public void RemoveAll()
         {
-            this.head.SetNextNode(null);
+            Node<T> current = head.GetNextNode();
+            while (current != null)
+            {
+                T person = current.GetItem();
+                person.ReleaseId(); // Du måste lägga till denna metod i Person-klassen
+                current = current.GetNextNode();
+            }
+
+            head.SetNextNode(null); // Töm hela listan
         }
+
 
         public bool IsEmpty()
         {
@@ -76,7 +77,7 @@ namespace SinglyLinkedList
         public int Size()
         {
             int count = 0;
-            Node current = head.GetNextNode();
+            Node<T> current = head.GetNextNode();
             while (current != null)
             {
                 count++;
@@ -85,5 +86,30 @@ namespace SinglyLinkedList
             return count;
         }
 
+        public Node<T> GetNode(int index)
+        {
+            return Find(index);
+        }
+
+        public void PrintList()
+        {
+            if (IsEmpty())
+            {
+                Console.WriteLine("\nListan innehåller nu: 0 noder.");
+                return;
+            }
+
+            Console.WriteLine("\nListan innehåller nu: " + Size() + " noder.");
+
+            Node<T> current = head.GetNextNode();
+            int index = 1;
+            while (current != null)
+            {
+                T p = current.GetItem();
+                Console.WriteLine("index " + index + "-> Namn: " + p.GetName() + ", Id: " + p.GetId() + ", Yrke: " + p.GetProfession());
+                index++;
+                current = current.GetNextNode();
+            }
+        }
     }
 }

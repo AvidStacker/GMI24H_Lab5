@@ -1,8 +1,18 @@
 {
   "version": 2,
-  "dgSpecHash": "kXQK3m+HHHg=",
-  "success": true,
+  "dgSpecHash": "/e9yFHTaMfo=",
+  "success": false,
   "projectFilePath": "C:\\Users\\ilage\\Documents\\GitHub\\GMI24H_Lab5\\SinglyLinkedList\\SinglyLinkedList\\SinglyLinkedList.csproj",
   "expectedPackageFiles": [],
-  "logs": []
+  "logs": [
+    {
+      "code": "NU1108",
+      "level": "Error",
+      "message": "Cycle detected. \r\n  SinglyLinkedList -> ArrayPerformanceTest -> SinglyLinkedList.",
+      "libraryId": "SinglyLinkedList",
+      "targetGraphs": [
+        "net8.0"
+      ]
+    }
+  ]
 }

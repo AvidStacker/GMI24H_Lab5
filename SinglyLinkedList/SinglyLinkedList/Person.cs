@@ -1,34 +1,36 @@
 ﻿using System;
 using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
 
 namespace SinglyLinkedList
 {
-    internal class Person
+    public class Person
     {
         private string name;
         private int id;
         private string profession;
 
+        private static HashSet<int> usedIds = new HashSet<int>();
+
         public Person(string name, int id, string profession)
         {
+            if (usedIds.Contains(id))
+            {
+                throw new ArgumentException("ID är redan taget.");
+            }
+
             this.name = name;
             this.id = id;
             this.profession = profession;
+            usedIds.Add(id);
         }
 
-        public string GetName() { return name; }
+        public void ReleaseId()
+        {
+            usedIds.Remove(this.id);
+        }
 
-        public void SetName(string name) { this.name = name; }
-
-        public int GetId() { return id; }
-
-        public void SetId(int id) { this.id = id; }
-
-        public string GetProfession() { return profession; }
-
-        public void SetProfession(string profession) { this.profession = profession; }
+        public string GetName() => name;
+        public int GetId() => id;
+        public string GetProfession() => profession;
     }
 }
