@@ -6,7 +6,7 @@ using System.Threading.Tasks;
 
 namespace SinglyLinkedList
 {
-    internal class ListReferenceBased : ListInterface<Node>
+    internal class ListReferenceBased : IListInterface
     {
         Node head;
 
@@ -15,40 +15,75 @@ namespace SinglyLinkedList
             this.head = new Node(null, null);
         }
 
-        public void Add(object item)
+        public void Add(object item, int index)
         {
-            throw new NotImplementedException();
+            if(index < 1 || index > Size() + 1)
+            {
+                throw new ListIndexOutOfBoundsException("Index out of bounds");
+            }
+
+            Node node = new Node(null, item);
+
+            Node currentNode = Find(index - 1);
+
+            node.SetNextNode(currentNode.GetNextNode());
+
+            currentNode.SetNextNode(node);
         }
 
-        public Node Find(int index)
+        private Node Find(int index)
         {
-            Node currentNode = head;
+            if (index < 0 || index > Size())
+            {
+                throw new ListIndexOutOfBoundsException("Index out of bounds");
+            }
 
-            for (int i = 1; i < index; i++)
+            Node currentNode = head;
+            for (int i = 0; i < index; i++)
             {
                 currentNode = currentNode.GetNextNode();
             }
+
             return currentNode;
         }
 
-        public bool IsEmpty()
-        {
-            throw new NotImplementedException();
-        }
 
-        public void Remove()
+        public void Remove(int index)
         {
-            throw new NotImplementedException();
+            if (index < 1 || index > Size())
+            {
+                throw new ListIndexOutOfBoundsException("Index out of bounds");
+            }
+
+            Node node = Find(index - 1);
+            Node currentNode = node.GetNextNode();
+
+            node.SetNextNode(currentNode.GetNextNode());
+
+            currentNode.SetNextNode(null);
         }
 
         public void RemoveAll()
         {
-            throw new NotImplementedException();
+            this.head.SetNextNode(null);
+        }
+
+        public bool IsEmpty()
+        {
+            return head.GetNextNode() == null;
         }
 
         public int Size()
         {
-            throw new NotImplementedException();
+            int count = 0;
+            Node current = head.GetNextNode();
+            while (current != null)
+            {
+                count++;
+                current = current.GetNextNode();
+            }
+            return count;
         }
+
     }
 }

@@ -6,15 +6,13 @@ using System.Threading.Tasks;
 
 namespace SinglyLinkedList
 {
-    internal interface ListInterface<Node>
+    internal interface IListInterface
     {
-        void Add(object item);
+        void Add(object item, int index);
 
-        void Remove();
+        void Remove(int index);
 
         void RemoveAll();
-
-        Node Find(int index);
 
         bool IsEmpty();
 
