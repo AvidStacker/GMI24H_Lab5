@@ -5,9 +5,10 @@ namespace SinglyLinkedList
 {
     class Program
     {
+
         static void Main(string[] args)
         {
-            ListReferenceBased<Person> list = new ListReferenceBased<Person>();
+            ListReferenceBased<Person> linkedlinkedList = new ListReferenceBased<Person>();
 
             bool running = true;
 
@@ -17,10 +18,10 @@ namespace SinglyLinkedList
                 Console.WriteLine("1. Lägg till person");
                 Console.WriteLine("2. Ta bort person");
                 Console.WriteLine("3. Visa antal personer");
-                Console.WriteLine("4. Är listan tom?");
-                Console.WriteLine("5. Töm listan");
+                Console.WriteLine("4. Är linkedListan tom?");
+                Console.WriteLine("5. Töm linkedListan");
                 Console.WriteLine("6. Hämta person på specifikt index");
-                Console.WriteLine("7. Skriv ut hela listan");
+                Console.WriteLine("7. Skriv ut hela linkedListan");
                 Console.WriteLine("8. Kör prestandatest (InsertAtBeginning/Middle/End)");
                 Console.WriteLine("9. Avsluta");
 
@@ -36,7 +37,7 @@ namespace SinglyLinkedList
                         int id = int.Parse(Console.ReadLine());
                         Console.Write("Ange yrke: ");
                         string profession = Console.ReadLine();
-                        Console.Write("\nAnge position att lägga till på (1 till " + (list.Size() + 1) + "): ");
+                        Console.Write("\nAnge position att lägga till på (1 till " + (linkedlinkedList.Size() + 1) + "): ");
                         int position = int.Parse(Console.ReadLine());
 
                         try
@@ -44,7 +45,7 @@ namespace SinglyLinkedList
                             Person p = new Person(name, id, profession);
 
                             Stopwatch stopwatch = Stopwatch.StartNew(); // Startar mätning
-                            list.Add(p, position);
+                            linkedlinkedList.Add(p, position);
                             stopwatch.Stop(); // Stoppar mätning
 
                             Console.WriteLine("\nPerson tillagd.");
@@ -57,12 +58,12 @@ namespace SinglyLinkedList
                         break;
 
                     case "2":
-                        Console.Write("\nAnge position att ta bort (1 till " + list.Size() + "): ");
+                        Console.Write("\nAnge position att ta bort (1 till " + linkedlinkedList.Size() + "): ");
                         int index = int.Parse(Console.ReadLine());
                         try
                         {
                             Stopwatch stopwatch = Stopwatch.StartNew(); // Startar tidtagning
-                            list.Remove(index);
+                            linkedlinkedList.Remove(index);
                             stopwatch.Stop(); // Stoppar tidtagning
 
                             Console.WriteLine("\nPerson borttagen.");
@@ -75,24 +76,24 @@ namespace SinglyLinkedList
                         break;
 
                     case "3":
-                        Console.WriteLine("\nAntal personer i listan: " + list.Size());
+                        Console.WriteLine("\nAntal personer i linkedListan: " + linkedlinkedList.Size());
                         break;
 
                     case "4":
-                        Console.WriteLine(list.IsEmpty() ? "\nListan är tom." : "\nListan är inte tom.");
+                        Console.WriteLine(linkedlinkedList.IsEmpty() ? "\nlinkedListan är tom." : "\nlinkedListan är inte tom.");
                         break;
 
                     case "5":
-                        list.RemoveAll();
-                        Console.WriteLine("\nListan har tömts.");
+                        linkedlinkedList.RemoveAll();
+                        Console.WriteLine("\nlinkedListan har tömts.");
                         break;
 
                     case "6":
-                        Console.Write("\nAnge index att hämta (1 till " + list.Size() + "): ");
+                        Console.Write("\nAnge index att hämta (1 till " + linkedlinkedList.Size() + "): ");
                         int fetchIndex = int.Parse(Console.ReadLine());
                         try
                         {
-                            Node<Person> foundNode = list.GetNode(fetchIndex);
+                            Node<Person> foundNode = linkedlinkedList.GetNode(fetchIndex);
                             Person foundPerson = foundNode.GetItem();
                             Console.WriteLine("\nPerson på index " + fetchIndex + " är: \nNamn: " + foundPerson.GetName() + ", Id: " + foundPerson.GetId() + ", Yrke: " + foundPerson.GetProfession());
                         }
@@ -103,16 +104,18 @@ namespace SinglyLinkedList
                         break;
 
                     case "7":
-                        list.PrintList();
+                        linkedlinkedList.PrintList();
                         break;
 
                     case "8":
                         const int antalPersoner = 10000;
-                        Console.WriteLine($"\n--- Länkad lista-inläggning ({antalPersoner} personer) ---\n");
+                        Console.WriteLine($"\n--- Länkad linkedLista-inläggning ({antalPersoner} personer) ---\n");
 
-                        InsertAtBeginningLinkedList(antalPersoner);
-                        InsertAtMiddleLinkedList(antalPersoner);
-                        InsertAtEndLinkedList(antalPersoner);
+                        ListReferenceBased<Person> testLinkedList = new ListReferenceBased<Person>();
+
+                        InsertAtBeginningLinkedList(testLinkedList, antalPersoner);
+                        InsertAtMiddleLinkedList(testLinkedList, antalPersoner);
+                        InsertAtEndLinkedList(testLinkedList, antalPersoner);
                         break;
 
                     case "9":
@@ -128,56 +131,76 @@ namespace SinglyLinkedList
             Console.WriteLine("\nProgrammet avslutas.");
         }
 
-        static void InsertAtBeginningLinkedList(int antal)
+        static void InsertAtBeginningLinkedList(ListReferenceBased<Person> linkedList, int antal)
         {
-            ListReferenceBased<Person> list = new ListReferenceBased<Person>();
+            int startingIndex = linkedList.Size();
 
             Stopwatch sw = Stopwatch.StartNew();
 
-            for (int i = 0; i < antal; i++)
+            for (int i = startingIndex; i < startingIndex + antal; i++)
             {
-                Person person = new Person($"Person{i}", i, "Yrke");
-                list.Add(person, 1);
+                try
+                {
+                    Person person = new Person($"Person{i}", i + 1, "Yrke"); // i + 1 to avoid ID 0
+                    linkedList.Add(person, 1);
+                }
+                catch (ArgumentException ex)
+                {
+                    Console.WriteLine("Fel vid inläggning av person: " + ex.Message);
+                }
             }
 
             sw.Stop();
-            Console.WriteLine("I början (LinkedList): " + sw.Elapsed.TotalMilliseconds + " ms");
+            Console.WriteLine("I början (LinkedlinkedList): " + sw.Elapsed.TotalMilliseconds + " ms");
         }
 
-        static void InsertAtMiddleLinkedList(int antal)
+        static void InsertAtMiddleLinkedList(ListReferenceBased<Person> linkedList, int antal)
         {
-            ListReferenceBased<Person> list = new ListReferenceBased<Person>();
+            int startingIndex = linkedList.Size();
 
             Stopwatch sw = Stopwatch.StartNew();
 
-            for (int i = 0; i < antal; i++)
+            for (int i = startingIndex; i < startingIndex + antal; i++)
             {
-                int middlePosition = list.Size() / 2 + 1;
-                Person person = new Person($"Person{i}", i, "Yrke");
-                list.Add(person, middlePosition);
+                try
+                {
+                    int middlePosition = linkedList.Size() / 2 + 1;
+                    Person person = new Person($"Person{i}", i + 1, "Yrke");
+                    linkedList.Add(person, middlePosition);
+                }
+                catch (ArgumentException ex)
+                {
+                    Console.WriteLine("Fel vid inläggning av person: " + ex.Message);
+                }
             }
 
             sw.Stop();
-            Console.WriteLine("I mitten (LinkedList): " + sw.Elapsed.TotalMilliseconds + " ms");
+            Console.WriteLine("I mitten (LinkedlinkedList): " + sw.Elapsed.TotalMilliseconds + " ms");
         }
 
-        static void InsertAtEndLinkedList(int antal)
+        static void InsertAtEndLinkedList(ListReferenceBased<Person> linkedList, int antal)
         {
-            ListReferenceBased<Person> list = new ListReferenceBased<Person>();
+            int startingIndex = linkedList.Size();
 
             Stopwatch sw = Stopwatch.StartNew();
 
-            for (int i = 0; i < antal; i++)
+            for (int i = startingIndex; i < startingIndex + antal; i++)
             {
-                int endPosition = list.Size() + 1;
-                Person person = new Person($"Person{i}", i, "Yrke");
-                list.Add(person, endPosition);
+                try
+                {
+                    int endPosition = linkedList.Size() + 1;
+                    Person person = new Person($"Person{i}", i + 1, "Yrke");
+                    linkedList.Add(person, endPosition);
+                }
+                catch (ArgumentException ex)
+                {
+                    Console.WriteLine("Fel vid inläggning av person: " + ex.Message);
+                }
             }
 
             sw.Stop();
-            Console.WriteLine("I slutet (LinkedList): " + sw.Elapsed.TotalMilliseconds + " ms");
+            Console.WriteLine("I slutet (LinkedlinkedList): " + sw.Elapsed.TotalMilliseconds + " ms");
         }
-
 
     }
 }

@@ -14,7 +14,7 @@ using System.Reflection;
 [assembly: System.Reflection.AssemblyCompanyAttribute("ParenthesesChecker")]
 [assembly: System.Reflection.AssemblyConfigurationAttribute("Debug")]
 [assembly: System.Reflection.AssemblyFileVersionAttribute("1.0.0.0")]
-[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+d4d16c438614033aa03fe62423c06e819a25e194")]
+[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+c9c3aae5661f5ddee77306377a55007d141ab62f")]
 [assembly: System.Reflection.AssemblyProductAttribute("ParenthesesChecker")]
 [assembly: System.Reflection.AssemblyTitleAttribute("ParenthesesChecker")]
 [assembly: System.Reflection.AssemblyVersionAttribute("1.0.0.0")]
