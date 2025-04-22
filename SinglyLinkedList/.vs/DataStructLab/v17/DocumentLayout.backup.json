@@ -50,7 +50,7 @@
       "DocumentGroups": [
         {
           "DockedWidth": 201,
-          "SelectedChildIndex": 13,
+          "SelectedChildIndex": 12,
           "Children": [
             {
               "$type": "Bookmark",
@@ -65,10 +65,6 @@
               "Name": "ST:0:0:{34e76e81-ee4a-11d0-ae2e-00a0c90fffc3}"
             },
             {
-              "$type": "Bookmark",
-              "Name": "ST:0:0:{40ea2e6b-2121-4bb8-a43e-c83c04b51041}"
-            },
-            {
               "$type": "Document",
               "DocumentIndex": 1,
               "Title": "ListReferenceBased.cs",
@@ -78,8 +74,7 @@
               "RelativeToolTip": "SinglyLinkedList\\ListReferenceBased.cs",
               "ViewState": "AgIAACYAAAAAAAAAAAAkwDEAAAArAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-04-22T14:26:54.098Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-04-22T14:26:54.098Z"
             },
             {
               "$type": "Document",
@@ -91,8 +86,7 @@
               "RelativeToolTip": "SinglyLinkedList\\Person.cs",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAACIAAAAFAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-04-22T14:19:50.497Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-04-22T14:19:50.497Z"
             },
             {
               "$type": "Document",
@@ -104,8 +98,7 @@
               "RelativeToolTip": "SinglyLinkedList\\ListIndexOutOfBoundsException.cs",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-04-22T14:21:11.444Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-04-22T14:21:11.444Z"
             },
             {
               "$type": "Document",
@@ -117,8 +110,7 @@
               "RelativeToolTip": "ArrayPerformanceTest\\Person.cs",
               "ViewState": "AgIAAAsAAAAAAAAAAAAQwBAAAAA9AAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-04-22T14:20:15.559Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-04-22T14:20:15.559Z"
             },
             {
               "$type": "Document",
@@ -130,8 +122,7 @@
               "RelativeToolTip": "SinglyLinkedList\\Program.cs",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAAAYAAAAFAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-04-22T14:19:21.714Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-04-22T14:19:21.714Z"
             },
             {
               "$type": "Document",
@@ -143,47 +134,43 @@
               "RelativeToolTip": "ArrayPerformanceTest\\Program.cs",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAACEAAAAhAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-04-22T14:18:26.698Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-04-22T14:18:26.698Z"
             },
             {
               "$type": "Document",
               "DocumentIndex": 9,
-              "Title": "ArrayPerformanceTest",
+              "Title": "ArrayPerformanceTest.csproj",
               "DocumentMoniker": "C:\\Users\\ilage\\Documents\\GitHub\\GMI24H_Lab5\\SinglyLinkedList\\ArrayPerformanceTest\\ArrayPerformanceTest.csproj",
               "RelativeDocumentMoniker": "ArrayPerformanceTest\\ArrayPerformanceTest.csproj",
               "ToolTip": "C:\\Users\\ilage\\Documents\\GitHub\\GMI24H_Lab5\\SinglyLinkedList\\ArrayPerformanceTest\\ArrayPerformanceTest.csproj",
               "RelativeToolTip": "ArrayPerformanceTest\\ArrayPerformanceTest.csproj",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAAAMAAAAgAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000758|",
-              "WhenOpened": "2025-04-22T13:42:18.588Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-04-22T13:42:18.588Z"
             },
             {
               "$type": "Document",
               "DocumentIndex": 2,
-              "Title": "SinglyLinkedList",
+              "Title": "SinglyLinkedList.csproj",
               "DocumentMoniker": "C:\\Users\\ilage\\Documents\\GitHub\\GMI24H_Lab5\\SinglyLinkedList\\SinglyLinkedList\\SinglyLinkedList.csproj",
               "RelativeDocumentMoniker": "SinglyLinkedList\\SinglyLinkedList.csproj",
               "ToolTip": "C:\\Users\\ilage\\Documents\\GitHub\\GMI24H_Lab5\\SinglyLinkedList\\SinglyLinkedList\\SinglyLinkedList.csproj",
               "RelativeToolTip": "SinglyLinkedList\\SinglyLinkedList.csproj",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAAAYAAAAfAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000758|",
-              "WhenOpened": "2025-04-22T13:42:16.257Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-04-22T13:42:16.257Z"
             },
             {
               "$type": "Document",
               "DocumentIndex": 3,
-              "Title": "ParenthesesChecker",
+              "Title": "ParenthesesChecker.csproj",
               "DocumentMoniker": "C:\\Users\\ilage\\Documents\\GitHub\\GMI24H_Lab5\\SinglyLinkedList\\ParenthesesChecker\\ParenthesesChecker.csproj",
               "RelativeDocumentMoniker": "ParenthesesChecker\\ParenthesesChecker.csproj",
               "ToolTip": "C:\\Users\\ilage\\Documents\\GitHub\\GMI24H_Lab5\\SinglyLinkedList\\ParenthesesChecker\\ParenthesesChecker.csproj",
               "RelativeToolTip": "ParenthesesChecker\\ParenthesesChecker.csproj",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAAAUAAAArAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000758|",
-              "WhenOpened": "2025-04-22T13:36:22.304Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-04-22T13:36:22.304Z"
             },
             {
               "$type": "Document",
@@ -193,10 +180,14 @@
               "RelativeDocumentMoniker": "ParenthesesChecker\\Program.cs",
               "ToolTip": "C:\\Users\\ilage\\Documents\\GitHub\\GMI24H_Lab5\\SinglyLinkedList\\ParenthesesChecker\\Program.cs",
               "RelativeToolTip": "ParenthesesChecker\\Program.cs",
-              "ViewState": "AgIAAGMAAAAAAAAAAAAowGwAAAARAAAAAAAAAA==",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAGwAAAARAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2025-04-22T13:04:15.332Z",
               "EditorCaption": ""
+            },
+            {
+              "$type": "Bookmark",
+              "Name": "ST:0:0:{40ea2e6b-2121-4bb8-a43e-c83c04b51041}"
             }
           ]
         },
