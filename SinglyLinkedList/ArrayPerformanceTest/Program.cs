@@ -1,5 +1,5 @@
-﻿using System.Diagnostics;
-using System;
+﻿using System;
+using System.Diagnostics;
 
 namespace ArrayPerformanceTest
 {
@@ -11,23 +11,39 @@ namespace ArrayPerformanceTest
         {
             const int antalPersoner = 10000;
 
+            // Skapa en array med unika personer (så ID inte krockar)
+            Person[] personer = GenerateUniquePersons(antalPersoner);
+
             Console.WriteLine($"--- Array-inläggning ({antalPersoner} personer) ---\n");
 
-            InsertAtBeginning(antalPersoner); // Inläggning i början av arrayen
-            InsertAtMiddle(antalPersoner);    // Inläggning i mitten av arrayen
-            InsertAtEnd(antalPersoner);       // Inläggning i slutet av arrayen
+            InsertAtBeginning(personer); // Inläggning i början av arrayen
+            InsertAtMiddle(personer);    // Inläggning i mitten av arrayen
+            InsertAtEnd(personer);       // Inläggning i slutet av arrayen
+        }
+
+        // Skapar en array av unika Person-objekt för testerna
+        static Person[] GenerateUniquePersons(int antal)
+        {
+            Person[] personer = new Person[antal];
+
+            for (int i = 0; i < antal; i++)
+            {
+                personer[i] = new Person($"Person{i}", i + 1, "Yrke"); // ID startar från 1
+            }
+
+            return personer;
         }
 
         // Lägger till personer i början av en array och mäter tiden det tar.
         // För varje ny inläggning skiftas befintliga element ett steg åt höger.
-        static void InsertAtBeginning(int antal)
+        static void InsertAtBeginning(Person[] personer)
         {
-            Person[] array = new Person[antal];
+            Person[] array = new Person[personer.Length];
             int currentSize = 0;
 
             Stopwatch sw = Stopwatch.StartNew();
 
-            for (int i = 0; i < antal; i++)
+            foreach (var person in personer)
             {
                 // Skiftar alla element åt höger för att göra plats i början
                 for (int j = currentSize; j > 0; j--)
@@ -35,7 +51,7 @@ namespace ArrayPerformanceTest
                     array[j] = array[j - 1];
                 }
 
-                array[0] = new Person($"Person{i}", i, "Yrke");
+                array[0] = person;
                 currentSize++;
             }
 
@@ -45,14 +61,14 @@ namespace ArrayPerformanceTest
 
         // Lägger till personer i mitten av en array och mäter tiden det tar.
         // Skiftar elementen åt höger från mitten vid varje ny inläggning.
-        static void InsertAtMiddle(int antal)
+        static void InsertAtMiddle(Person[] personer)
         {
-            Person[] array = new Person[antal];
+            Person[] array = new Person[personer.Length];
             int currentSize = 0;
 
             Stopwatch sw = Stopwatch.StartNew();
 
-            for (int i = 0; i < antal; i++)
+            foreach (var person in personer)
             {
                 int insertIndex = currentSize / 2;
 
@@ -62,7 +78,7 @@ namespace ArrayPerformanceTest
                     array[j] = array[j - 1];
                 }
 
-                array[insertIndex] = new Person($"Person{i}", i, "Yrke");
+                array[insertIndex] = person;
                 currentSize++;
             }
 
@@ -72,15 +88,15 @@ namespace ArrayPerformanceTest
 
         // Lägger till personer i slutet av en array och mäter tiden det tar.
         // Ingen skiftning krävs, vilket gör det till den mest effektiva operationen.
-        static void InsertAtEnd(int antal)
+        static void InsertAtEnd(Person[] personer)
         {
-            Person[] array = new Person[antal];
+            Person[] array = new Person[personer.Length];
 
             Stopwatch sw = Stopwatch.StartNew();
 
-            for (int i = 0; i < antal; i++)
+            for (int i = 0; i < personer.Length; i++)
             {
-                array[i] = new Person($"Person{i}", i, "Yrke");
+                array[i] = personer[i];
             }
 
             sw.Stop();

@@ -3,3 +3,13 @@ C:\Users\ilage\Documents\GitHub\GMI24H_Lab5\SinglyLinkedList\ArrayPerformanceTes
 C:\Users\ilage\Documents\GitHub\GMI24H_Lab5\SinglyLinkedList\ArrayPerformanceTest\obj\Debug\net8.0\ArrayPerformanceTest.AssemblyInfo.cs
 C:\Users\ilage\Documents\GitHub\GMI24H_Lab5\SinglyLinkedList\ArrayPerformanceTest\obj\Debug\net8.0\ArrayPerformanceTest.csproj.CoreCompileInputs.cache
 C:\Users\ilage\Documents\GitHub\GMI24H_Lab5\SinglyLinkedList\ArrayPerformanceTest\obj\Debug\net8.0\ArrayPerformanceTest.sourcelink.json
+C:\Users\ilage\Documents\GitHub\GMI24H_Lab5\SinglyLinkedList\ArrayPerformanceTest\bin\Debug\net8.0\ArrayPerformanceTest.exe
+C:\Users\ilage\Documents\GitHub\GMI24H_Lab5\SinglyLinkedList\ArrayPerformanceTest\bin\Debug\net8.0\ArrayPerformanceTest.deps.json
+C:\Users\ilage\Documents\GitHub\GMI24H_Lab5\SinglyLinkedList\ArrayPerformanceTest\bin\Debug\net8.0\ArrayPerformanceTest.runtimeconfig.json
+C:\Users\ilage\Documents\GitHub\GMI24H_Lab5\SinglyLinkedList\ArrayPerformanceTest\bin\Debug\net8.0\ArrayPerformanceTest.dll
+C:\Users\ilage\Documents\GitHub\GMI24H_Lab5\SinglyLinkedList\ArrayPerformanceTest\bin\Debug\net8.0\ArrayPerformanceTest.pdb
+C:\Users\ilage\Documents\GitHub\GMI24H_Lab5\SinglyLinkedList\ArrayPerformanceTest\obj\Debug\net8.0\ArrayPerformanceTest.dll
+C:\Users\ilage\Documents\GitHub\GMI24H_Lab5\SinglyLinkedList\ArrayPerformanceTest\obj\Debug\net8.0\refint\ArrayPerformanceTest.dll
+C:\Users\ilage\Documents\GitHub\GMI24H_Lab5\SinglyLinkedList\ArrayPerformanceTest\obj\Debug\net8.0\ArrayPerformanceTest.pdb
+C:\Users\ilage\Documents\GitHub\GMI24H_Lab5\SinglyLinkedList\ArrayPerformanceTest\obj\Debug\net8.0\ArrayPerformanceTest.genruntimeconfig.cache
+C:\Users\ilage\Documents\GitHub\GMI24H_Lab5\SinglyLinkedList\ArrayPerformanceTest\obj\Debug\net8.0\ref\ArrayPerformanceTest.dll

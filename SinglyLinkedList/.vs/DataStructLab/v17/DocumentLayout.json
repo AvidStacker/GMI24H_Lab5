@@ -5,6 +5,14 @@
     {
       "AbsoluteMoniker": "D:0:0:{06236F53-A06C-4D43-9769-C42DA01ECABF}|ArrayPerformanceTest\\ArrayPerformanceTest.csproj|c:\\users\\ilage\\documents\\github\\gmi24h_lab5\\singlylinkedlist\\arrayperformancetest\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{06236F53-A06C-4D43-9769-C42DA01ECABF}|ArrayPerformanceTest\\ArrayPerformanceTest.csproj|solutionrelative:arrayperformancetest\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{06236F53-A06C-4D43-9769-C42DA01ECABF}|ArrayPerformanceTest\\ArrayPerformanceTest.csproj|c:\\users\\ilage\\documents\\github\\gmi24h_lab5\\singlylinkedlist\\arrayperformancetest\\person.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{06236F53-A06C-4D43-9769-C42DA01ECABF}|ArrayPerformanceTest\\ArrayPerformanceTest.csproj|solutionrelative:arrayperformancetest\\person.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{09EE09AE-55C4-400A-B54B-5C52ECC119B2}|SinglyLinkedList\\SinglyLinkedList.csproj|c:\\users\\ilage\\documents\\github\\gmi24h_lab5\\singlylinkedlist\\singlylinkedlist\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{09EE09AE-55C4-400A-B54B-5C52ECC119B2}|SinglyLinkedList\\SinglyLinkedList.csproj|solutionrelative:singlylinkedlist\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     }
   ],
   "DocumentGroupContainers": [
@@ -14,7 +22,7 @@
       "DocumentGroups": [
         {
           "DockedWidth": 201,
-          "SelectedChildIndex": 3,
+          "SelectedChildIndex": 5,
           "Children": [
             {
               "$type": "Bookmark",
@@ -30,20 +38,42 @@
             },
             {
               "$type": "Document",
+              "DocumentIndex": 1,
+              "Title": "Person.cs",
+              "DocumentMoniker": "C:\\Users\\ilage\\Documents\\GitHub\\GMI24H_Lab5\\SinglyLinkedList\\ArrayPerformanceTest\\Person.cs",
+              "RelativeDocumentMoniker": "ArrayPerformanceTest\\Person.cs",
+              "ToolTip": "C:\\Users\\ilage\\Documents\\GitHub\\GMI24H_Lab5\\SinglyLinkedList\\ArrayPerformanceTest\\Person.cs",
+              "RelativeToolTip": "ArrayPerformanceTest\\Person.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAABEAAAA9AAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-04-22T16:16:02.098Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 2,
+              "Title": "Program.cs",
+              "DocumentMoniker": "C:\\Users\\ilage\\Documents\\GitHub\\GMI24H_Lab5\\SinglyLinkedList\\SinglyLinkedList\\Program.cs",
+              "RelativeDocumentMoniker": "SinglyLinkedList\\Program.cs",
+              "ToolTip": "C:\\Users\\ilage\\Documents\\GitHub\\GMI24H_Lab5\\SinglyLinkedList\\SinglyLinkedList\\Program.cs",
+              "RelativeToolTip": "SinglyLinkedList\\Program.cs",
+              "ViewState": "AgIAAAgAAAAAAAAAAAAQwBUAAAA9AAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-04-22T16:12:46.528Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
               "DocumentIndex": 0,
               "Title": "Program.cs",
               "DocumentMoniker": "C:\\Users\\ilage\\Documents\\GitHub\\GMI24H_Lab5\\SinglyLinkedList\\ArrayPerformanceTest\\Program.cs",
               "RelativeDocumentMoniker": "ArrayPerformanceTest\\Program.cs",
               "ToolTip": "C:\\Users\\ilage\\Documents\\GitHub\\GMI24H_Lab5\\SinglyLinkedList\\ArrayPerformanceTest\\Program.cs",
               "RelativeToolTip": "ArrayPerformanceTest\\Program.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAQAAAABAAAAAAAAAA==",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAIAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2025-04-22T14:18:26.698Z",
               "EditorCaption": ""
-            },
-            {
-              "$type": "Bookmark",
-              "Name": "ST:0:0:{40ea2e6b-2121-4bb8-a43e-c83c04b51041}"
             }
           ]
         },
