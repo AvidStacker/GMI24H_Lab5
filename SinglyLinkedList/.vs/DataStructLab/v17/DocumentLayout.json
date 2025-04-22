@@ -3,32 +3,8 @@
   "WorkspaceRootPath": "C:\\Users\\ilage\\Documents\\GitHub\\GMI24H_Lab5\\SinglyLinkedList\\",
   "Documents": [
     {
-      "AbsoluteMoniker": "D:0:0:{09EE09AE-55C4-400A-B54B-5C52ECC119B2}|SinglyLinkedList\\SinglyLinkedList.csproj|c:\\users\\ilage\\documents\\github\\gmi24h_lab5\\singlylinkedlist\\singlylinkedlist\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{09EE09AE-55C4-400A-B54B-5C52ECC119B2}|SinglyLinkedList\\SinglyLinkedList.csproj|solutionrelative:singlylinkedlist\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{09EE09AE-55C4-400A-B54B-5C52ECC119B2}|SinglyLinkedList\\SinglyLinkedList.csproj|c:\\users\\ilage\\documents\\github\\gmi24h_lab5\\singlylinkedlist\\singlylinkedlist\\person.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{09EE09AE-55C4-400A-B54B-5C52ECC119B2}|SinglyLinkedList\\SinglyLinkedList.csproj|solutionrelative:singlylinkedlist\\person.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{09EE09AE-55C4-400A-B54B-5C52ECC119B2}|SinglyLinkedList\\SinglyLinkedList.csproj|c:\\users\\ilage\\documents\\github\\gmi24h_lab5\\singlylinkedlist\\singlylinkedlist\\listreferencebased.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{09EE09AE-55C4-400A-B54B-5C52ECC119B2}|SinglyLinkedList\\SinglyLinkedList.csproj|solutionrelative:singlylinkedlist\\listreferencebased.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{06236F53-A06C-4D43-9769-C42DA01ECABF}|ArrayPerformanceTest\\ArrayPerformanceTest.csproj|c:\\users\\ilage\\documents\\github\\gmi24h_lab5\\singlylinkedlist\\arrayperformancetest\\person.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{06236F53-A06C-4D43-9769-C42DA01ECABF}|ArrayPerformanceTest\\ArrayPerformanceTest.csproj|solutionrelative:arrayperformancetest\\person.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{1963325F-D1C7-431A-B893-F47003ED460A}|ParenthesesChecker\\ParenthesesChecker.csproj|c:\\users\\ilage\\documents\\github\\gmi24h_lab5\\singlylinkedlist\\parentheseschecker\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{1963325F-D1C7-431A-B893-F47003ED460A}|ParenthesesChecker\\ParenthesesChecker.csproj|solutionrelative:parentheseschecker\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
       "AbsoluteMoniker": "D:0:0:{06236F53-A06C-4D43-9769-C42DA01ECABF}|ArrayPerformanceTest\\ArrayPerformanceTest.csproj|c:\\users\\ilage\\documents\\github\\gmi24h_lab5\\singlylinkedlist\\arrayperformancetest\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{06236F53-A06C-4D43-9769-C42DA01ECABF}|ArrayPerformanceTest\\ArrayPerformanceTest.csproj|solutionrelative:arrayperformancetest\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{1963325F-D1C7-431A-B893-F47003ED460A}|ParenthesesChecker\\ParenthesesChecker.csproj|c:\\users\\ilage\\documents\\github\\gmi24h_lab5\\singlylinkedlist\\parentheseschecker\\parentheseschecker.csproj||{FA3CD31E-987B-443A-9B81-186104E8DAC1}|",
-      "RelativeMoniker": "D:0:0:{1963325F-D1C7-431A-B893-F47003ED460A}|ParenthesesChecker\\ParenthesesChecker.csproj|solutionrelative:parentheseschecker\\parentheseschecker.csproj||{FA3CD31E-987B-443A-9B81-186104E8DAC1}|"
     }
   ],
   "DocumentGroupContainers": [
@@ -38,7 +14,7 @@
       "DocumentGroups": [
         {
           "DockedWidth": 201,
-          "SelectedChildIndex": 7,
+          "SelectedChildIndex": 3,
           "Children": [
             {
               "$type": "Bookmark",
@@ -53,99 +29,21 @@
               "Name": "ST:0:0:{34e76e81-ee4a-11d0-ae2e-00a0c90fffc3}"
             },
             {
-              "$type": "Bookmark",
-              "Name": "ST:0:0:{40ea2e6b-2121-4bb8-a43e-c83c04b51041}"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 2,
-              "Title": "ListReferenceBased.cs",
-              "DocumentMoniker": "C:\\Users\\ilage\\Documents\\GitHub\\GMI24H_Lab5\\SinglyLinkedList\\SinglyLinkedList\\ListReferenceBased.cs",
-              "RelativeDocumentMoniker": "SinglyLinkedList\\ListReferenceBased.cs",
-              "ToolTip": "C:\\Users\\ilage\\Documents\\GitHub\\GMI24H_Lab5\\SinglyLinkedList\\SinglyLinkedList\\ListReferenceBased.cs",
-              "RelativeToolTip": "SinglyLinkedList\\ListReferenceBased.cs",
-              "ViewState": "AgIAAFYAAAAAAAAAAAAkwG4AAAAAAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-04-22T14:26:54.098Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 1,
-              "Title": "Person.cs",
-              "DocumentMoniker": "C:\\Users\\ilage\\Documents\\GitHub\\GMI24H_Lab5\\SinglyLinkedList\\SinglyLinkedList\\Person.cs",
-              "RelativeDocumentMoniker": "SinglyLinkedList\\Person.cs",
-              "ToolTip": "C:\\Users\\ilage\\Documents\\GitHub\\GMI24H_Lab5\\SinglyLinkedList\\SinglyLinkedList\\Person.cs",
-              "RelativeToolTip": "SinglyLinkedList\\Person.cs",
-              "ViewState": "AgIAAA4AAAAAAAAAAAAmwBsAAAAJAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-04-22T14:19:50.497Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 3,
-              "Title": "Person.cs",
-              "DocumentMoniker": "C:\\Users\\ilage\\Documents\\GitHub\\GMI24H_Lab5\\SinglyLinkedList\\ArrayPerformanceTest\\Person.cs",
-              "RelativeDocumentMoniker": "ArrayPerformanceTest\\Person.cs",
-              "ToolTip": "C:\\Users\\ilage\\Documents\\GitHub\\GMI24H_Lab5\\SinglyLinkedList\\ArrayPerformanceTest\\Person.cs",
-              "RelativeToolTip": "ArrayPerformanceTest\\Person.cs",
-              "ViewState": "AgIAAAsAAAAAAAAAAAAQwBAAAAA9AAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-04-22T14:20:15.559Z",
-              "EditorCaption": ""
-            },
-            {
               "$type": "Document",
               "DocumentIndex": 0,
-              "Title": "Program.cs",
-              "DocumentMoniker": "C:\\Users\\ilage\\Documents\\GitHub\\GMI24H_Lab5\\SinglyLinkedList\\SinglyLinkedList\\Program.cs",
-              "RelativeDocumentMoniker": "SinglyLinkedList\\Program.cs",
-              "ToolTip": "C:\\Users\\ilage\\Documents\\GitHub\\GMI24H_Lab5\\SinglyLinkedList\\SinglyLinkedList\\Program.cs",
-              "RelativeToolTip": "SinglyLinkedList\\Program.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAUAAAARAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-04-22T14:19:21.714Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 5,
               "Title": "Program.cs",
               "DocumentMoniker": "C:\\Users\\ilage\\Documents\\GitHub\\GMI24H_Lab5\\SinglyLinkedList\\ArrayPerformanceTest\\Program.cs",
               "RelativeDocumentMoniker": "ArrayPerformanceTest\\Program.cs",
               "ToolTip": "C:\\Users\\ilage\\Documents\\GitHub\\GMI24H_Lab5\\SinglyLinkedList\\ArrayPerformanceTest\\Program.cs",
               "RelativeToolTip": "ArrayPerformanceTest\\Program.cs",
-              "ViewState": "AgIAADgAAAAAAAAAAAAwwEMAAAAvAAAAAAAAAA==",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAQAAAABAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2025-04-22T14:18:26.698Z",
               "EditorCaption": ""
             },
             {
-              "$type": "Document",
-              "DocumentIndex": 6,
-              "Title": "ParenthesesChecker.csproj",
-              "DocumentMoniker": "C:\\Users\\ilage\\Documents\\GitHub\\GMI24H_Lab5\\SinglyLinkedList\\ParenthesesChecker\\ParenthesesChecker.csproj",
-              "RelativeDocumentMoniker": "ParenthesesChecker\\ParenthesesChecker.csproj",
-              "ToolTip": "C:\\Users\\ilage\\Documents\\GitHub\\GMI24H_Lab5\\SinglyLinkedList\\ParenthesesChecker\\ParenthesesChecker.csproj",
-              "RelativeToolTip": "ParenthesesChecker\\ParenthesesChecker.csproj",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAUAAAArAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000758|",
-              "WhenOpened": "2025-04-22T13:36:22.304Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 4,
-              "Title": "Program.cs",
-              "DocumentMoniker": "C:\\Users\\ilage\\Documents\\GitHub\\GMI24H_Lab5\\SinglyLinkedList\\ParenthesesChecker\\Program.cs",
-              "RelativeDocumentMoniker": "ParenthesesChecker\\Program.cs",
-              "ToolTip": "C:\\Users\\ilage\\Documents\\GitHub\\GMI24H_Lab5\\SinglyLinkedList\\ParenthesesChecker\\Program.cs",
-              "RelativeToolTip": "ParenthesesChecker\\Program.cs",
-              "ViewState": "AgIAABAAAAAAAAAAAAAgwDYAAAAwAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-04-22T13:04:15.332Z",
-              "EditorCaption": ""
+              "$type": "Bookmark",
+              "Name": "ST:0:0:{40ea2e6b-2121-4bb8-a43e-c83c04b51041}"
             }
           ]
         },

@@ -5,6 +5,7 @@ namespace SinglyLinkedList
 {
     class Program
     {
+        // Huvudmetoden som kör menyvalet för användaren och hanterar listoperationer.
 
         static void Main(string[] args)
         {
@@ -131,6 +132,7 @@ namespace SinglyLinkedList
             Console.WriteLine("\nProgrammet avslutas.");
         }
 
+        // Lägger till ett givet antal personer i början av listan och mäter tidsåtgången.
         static void InsertAtBeginningLinkedList(ListReferenceBased<Person> linkedList, int antal)
         {
             int startingIndex = linkedList.Size();
@@ -154,6 +156,7 @@ namespace SinglyLinkedList
             Console.WriteLine("I början (LinkedlinkedList): " + sw.Elapsed.TotalMilliseconds + " ms");
         }
 
+        // Lägger till ett givet antal personer i mitten av listan och mäter tidsåtgången.
         static void InsertAtMiddleLinkedList(ListReferenceBased<Person> linkedList, int antal)
         {
             int startingIndex = linkedList.Size();
@@ -178,6 +181,7 @@ namespace SinglyLinkedList
             Console.WriteLine("I mitten (LinkedlinkedList): " + sw.Elapsed.TotalMilliseconds + " ms");
         }
 
+        // Lägger till ett givet antal personer i slutet av listan och mäter tidsåtgången.
         static void InsertAtEndLinkedList(ListReferenceBased<Person> linkedList, int antal)
         {
             int startingIndex = linkedList.Size();

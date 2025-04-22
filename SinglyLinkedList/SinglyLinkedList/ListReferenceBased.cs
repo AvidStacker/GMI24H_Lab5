@@ -2,16 +2,18 @@
 
 namespace SinglyLinkedList
 {
-    public class ListReferenceBased<T>
+    public class ListReferenceBased<T> : IListInterface<T>
     {
         private Node<T> head;
         private int count = 0;
 
+        // Skapar en ny tom länkad lista med ett "head"-element som startpunkt.
         public ListReferenceBased()
         {
             this.head = new Node<T>(null, default(T));
         }
 
+        // Lägger till ett element på en specifik position i listan.
         public void Add(T item, int index)
         {
             if (index < 1 || index > count + 1)
@@ -28,23 +30,7 @@ namespace SinglyLinkedList
             count++;
         }
 
-
-        private Node<T> Find(int index)
-        {
-            if (index < 0 || index > Size())
-            {
-                throw new ListIndexOutOfBoundsException("Index out of bounds");
-            }
-
-            Node<T> currentNode = head;
-            for (int i = 0; i < index; i++)
-            {
-                currentNode = currentNode.GetNextNode();
-            }
-
-            return currentNode;
-        }
-
+        // Tar bort ett element från en viss position i listan.
         public void Remove(int index)
         {
             if (index < 1 || index > count)
@@ -61,30 +47,49 @@ namespace SinglyLinkedList
             count--;
         }
 
-
+        // Tömmer hela listan på element.
         public void RemoveAll()
         {
             head.SetNextNode(null);
             count = 0;
         }
 
-
+        // Returnerar true om listan är tom, annars false.
         public bool IsEmpty()
         {
             return head.GetNextNode() == null;
         }
 
+        // Returnerar antalet element i listan.
         public int Size()
         {
             return count;
         }
 
+        // Returnerar noden på en viss position (intern hjälpmetod).
+        private Node<T> Find(int index)
+        {
+            if (index < 0 || index > Size())
+            {
+                throw new ListIndexOutOfBoundsException("Index out of bounds");
+            }
 
+            Node<T> currentNode = head;
+            for (int i = 0; i < index; i++)
+            {
+                currentNode = currentNode.GetNextNode();
+            }
+
+            return currentNode;
+        }
+
+        // Returnerar noden på det angivna indexet.
         public Node<T> GetNode(int index)
         {
             return Find(index);
         }
 
+        // Skriver ut innehållet i listan till konsolen.
         public void PrintList()
         {
             if (IsEmpty())

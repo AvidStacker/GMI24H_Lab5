@@ -6,6 +6,7 @@ using System.Threading.Tasks;
 
 namespace SinglyLinkedList
 {
+    // Egen undantagsklass som används vid ogiltiga indexoperationer i listan.
     internal class ListIndexOutOfBoundsException : Exception
     {
 
