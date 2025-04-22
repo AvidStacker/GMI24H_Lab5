@@ -1,0 +1,5 @@
+C:\Users\ilage\Documents\GitHub\GMI24H_Lab5\SinglyLinkedList\ArrayPerformanceTest\obj\Debug\net8.0\ArrayPerformanceTest.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\ilage\Documents\GitHub\GMI24H_Lab5\SinglyLinkedList\ArrayPerformanceTest\obj\Debug\net8.0\ArrayPerformanceTest.AssemblyInfoInputs.cache
+C:\Users\ilage\Documents\GitHub\GMI24H_Lab5\SinglyLinkedList\ArrayPerformanceTest\obj\Debug\net8.0\ArrayPerformanceTest.AssemblyInfo.cs
+C:\Users\ilage\Documents\GitHub\GMI24H_Lab5\SinglyLinkedList\ArrayPerformanceTest\obj\Debug\net8.0\ArrayPerformanceTest.csproj.CoreCompileInputs.cache
+C:\Users\ilage\Documents\GitHub\GMI24H_Lab5\SinglyLinkedList\ArrayPerformanceTest\obj\Debug\net8.0\ArrayPerformanceTest.sourcelink.json

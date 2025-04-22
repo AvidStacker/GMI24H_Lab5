@@ -2,18 +2,19 @@
 
 namespace SinglyLinkedList
 {
-    internal class ListReferenceBased<T> where T : Person
+    public class ListReferenceBased<T>
     {
         private Node<T> head;
+        private int count = 0;
 
         public ListReferenceBased()
         {
-            this.head = new Node<T>(null, null);
+            this.head = new Node<T>(null, default(T));
         }
 
         public void Add(T item, int index)
         {
-            if (index < 1 || index > Size() + 1)
+            if (index < 1 || index > count + 1)
             {
                 throw new ListIndexOutOfBoundsException("Index out of bounds");
             }
@@ -23,7 +24,10 @@ namespace SinglyLinkedList
 
             node.SetNextNode(currentNode.GetNextNode());
             currentNode.SetNextNode(node);
+
+            count++;
         }
+
 
         private Node<T> Find(int index)
         {
@@ -43,7 +47,7 @@ namespace SinglyLinkedList
 
         public void Remove(int index)
         {
-            if (index < 1 || index > Size())
+            if (index < 1 || index > count)
             {
                 throw new ListIndexOutOfBoundsException("Index out of bounds");
             }
@@ -53,19 +57,15 @@ namespace SinglyLinkedList
 
             node.SetNextNode(currentNode.GetNextNode());
             currentNode.SetNextNode(null);
+
+            count--;
         }
+
 
         public void RemoveAll()
         {
-            Node<T> current = head.GetNextNode();
-            while (current != null)
-            {
-                T person = current.GetItem();
-                person.ReleaseId(); // Du måste lägga till denna metod i Person-klassen
-                current = current.GetNextNode();
-            }
-
-            head.SetNextNode(null); // Töm hela listan
+            head.SetNextNode(null);
+            count = 0;
         }
 
 
@@ -76,15 +76,9 @@ namespace SinglyLinkedList
 
         public int Size()
         {
-            int count = 0;
-            Node<T> current = head.GetNextNode();
-            while (current != null)
-            {
-                count++;
-                current = current.GetNextNode();
-            }
             return count;
         }
+
 
         public Node<T> GetNode(int index)
         {
@@ -105,11 +99,12 @@ namespace SinglyLinkedList
             int index = 1;
             while (current != null)
             {
-                T p = current.GetItem();
-                Console.WriteLine("index " + index + "-> Namn: " + p.GetName() + ", Id: " + p.GetId() + ", Yrke: " + p.GetProfession());
+                T item = current.GetItem();
+                Console.WriteLine("index " + index + "-> " + item.ToString()); // Adjust to your item type
                 index++;
                 current = current.GetNextNode();
             }
         }
     }
+
 }

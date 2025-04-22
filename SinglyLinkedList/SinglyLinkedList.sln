@@ -7,6 +7,8 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "SinglyLinkedList", "SinglyL
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ArrayPerformanceTest", "ArrayPerformanceTest\ArrayPerformanceTest.csproj", "{06236F53-A06C-4D43-9769-C42DA01ECABF}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ParenthesesChecker", "ParenthesesChecker\ParenthesesChecker.csproj", "{1963325F-D1C7-431A-B893-F47003ED460A}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -21,6 +23,10 @@ Global
 		{06236F53-A06C-4D43-9769-C42DA01ECABF}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{06236F53-A06C-4D43-9769-C42DA01ECABF}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{06236F53-A06C-4D43-9769-C42DA01ECABF}.Release|Any CPU.Build.0 = Release|Any CPU
+		{1963325F-D1C7-431A-B893-F47003ED460A}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{1963325F-D1C7-431A-B893-F47003ED460A}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{1963325F-D1C7-431A-B893-F47003ED460A}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{1963325F-D1C7-431A-B893-F47003ED460A}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
